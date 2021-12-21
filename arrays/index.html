@@ -1,0 +1,40 @@
+console.log("--- push some items on to an array");
+const myArray = [];
+myArray.push("red");
+myArray.push("green");
+myArray.push("blue");
+let myString = JSON.stringify(myArray);
+console.log(myString);
+
+console.log("--- pop and item from an array");
+myArray.pop();
+myString = JSON.stringify(myArray);
+console.log(myString);
+
+console.log("--- add an item to the left of the array");
+myArray.unshift("yellow");
+myString = JSON.stringify(myArray);
+console.log(myString);
+
+console.log("--- remove an item from the left of an array");
+myArray.shift();
+myString = JSON.stringify(myArray);
+console.log(myString);
+
+console.log("--- sort the array");
+myArray.sort();
+myString = JSON.stringify(myArray);
+console.log(myString);
+
+console.log("--- iterate over the array");
+for (let i=0; i<myArray.length; i+=1) {
+    const color = myArray[i];
+    console.log(`${i},${color}`);
+}
+
+console.log("--- iterate over the array");
+for (let i=0; i<myArray.length; i+=1) {
+    const color = myArray[i];
+    const upper = color.toUpperCase();
+    console.log(`${i},${upper}`);
+}
